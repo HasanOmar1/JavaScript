@@ -6,6 +6,7 @@ let bool = true;
 let kola = null;
 let sup;
 let sym = Symbol('Hi');
+let empty = null;
 const car = {type:"Fiat", model:"500", color:"white"};
 
 
@@ -16,4 +17,6 @@ console.log(typeof kola);
 console.log(typeof sup);
 console.log(typeof sym);
 console.log(typeof car);
+console.log(typeof empty);
+
 

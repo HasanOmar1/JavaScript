@@ -1,5 +1,5 @@
 
-let numSiblings = parseInt(prompt("How many siblings do you have?"), 10);
+let numSiblings = parseInt(prompt("How many siblings do you have?"));
 
 
 if(numSiblings === 1){

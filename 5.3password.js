@@ -20,22 +20,40 @@ const password = prompt('Enter your password:');
 //     console.log('Strong');
 // }
 
+// let score = 0;
+
+// if(password.length > 7 ) {
+//     score += 1 ;
+// }
+
+// /[A-Z]/.test(password) ? score += 1 : null;
+
+// if(score >= 2){
+//     console.log('Very strong password');
+// }
+// else if(password.length === 7){
+//     console.log('Strong');
+// }
+// else{
+//     console.log('Weak password');
+// }
+
+
+// Shady's answer
+
+
 let score = 0;
 
-if(password.length > 7 ) {
-    score += 1 ;
-}
-
+password.length > 7 ? score += 1 : null;
 /[A-Z]/.test(password) ? score += 1 : null;
+/[a-z]/.test(password) ? score += 1 : null;
+/[0-9]/.test(password) ? score += 1 : null;
+/[ `!@#$%^&*()_+\-=\[\]{};':"\\|,.<>\/?~]/.test(password) ? score += 1 : null;
 
-if(score >= 2){
-    console.log('Very strong password');
+if(score >= 4){
+    console.log('very strong password');
+} else if (score >= 3){
+    console.log('strong password');
+} else {
+    console.log('weak password');
 }
-else if(password.length === 7){
-    console.log('Strong');
-}
-else{
-    console.log('Weak password');
-}
-
-

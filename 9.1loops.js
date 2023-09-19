@@ -6,9 +6,15 @@ const listOfNeighbours = [
 
     ];
 
-    console.log(`Neighbour : ` + listOfNeighbours[0][0]);
-    console.log(`Neighbour : ` + listOfNeighbours[0][1]);
-    console.log(`Neighbour : ` + listOfNeighbours[1][0]);
-    console.log(`Neighbour : ` + listOfNeighbours[2][0]);
-    console.log(`Neighbour : ` + listOfNeighbours[2][1]);
-    console.log(`Neighbour : ` + listOfNeighbours[2][2]);
+
+
+    for(let i = 0 ;  i < listOfNeighbours.length ; i++){
+
+        for(let j = 0 ;  j < listOfNeighbours[i].length ; j++){
+            console.log(`Neighbour: ${listOfNeighbours[i][j]}`);
+
+        }
+
+
+
+    }

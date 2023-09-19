@@ -39,7 +39,7 @@ const password = prompt('Enter your password:');
 // }
 
 
-// Shady's answer
+// Shhady's answer
 
 
 let score = 0;

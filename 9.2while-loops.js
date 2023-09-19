@@ -1,7 +1,7 @@
 
-let random = Math.floor(Math.random() * 50 + 1);
+const random = Math.floor(Math.random() * 50 + 1);
 
- let answer = prompt("Guess a number between 1 and 50");
+let answer = prompt("Guess a number between 1 and 50");
 
 
 

@@ -22,7 +22,7 @@ answer = prompt("Guess a number between 1 and 50");
 
 }
 
-    alert("The guess is correct!")
+    alert(`Your guess is correct! , the guess was ${random}!`)
     
 
 

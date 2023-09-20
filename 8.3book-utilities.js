@@ -29,9 +29,10 @@ const bookUtils = {
         
     },
 
-    setLanguage(){
-        book1.language = 'Arabic';
-        book2.language = 'Hebrew';
+    setLanguage(book,lang){
+        book.language = lang;
+        // book1.language = 'Arabic';
+        // book2.language = 'Hebrew';
     },
 
     setTranslation(){
@@ -58,7 +59,8 @@ const bookUtils = {
 
 bookUtils.getFirstPublished(book1,book2);
 bookUtils.setNewEdition();
-bookUtils.setLanguage();
+bookUtils.setLanguage(book1 ,'Arabic');
+bookUtils.setLanguage(book2 ,'Hebrew');
 bookUtils.setTranslation();
 bookUtils.setPublisher();
 console.log(book1);

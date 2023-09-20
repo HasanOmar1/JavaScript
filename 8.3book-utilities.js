@@ -13,7 +13,7 @@ const book2 = {
 
 const bookUtils = {
 
-    getFirstPublished(){
+    getFirstPublished(book1,book2){
 
         if(book1.year > book2.year){
             console.log(book2.bookName);
@@ -56,7 +56,7 @@ const bookUtils = {
 
 }
 
-bookUtils.getFirstPublished();
+bookUtils.getFirstPublished(book1,book2);
 bookUtils.setNewEdition();
 bookUtils.setLanguage();
 bookUtils.setTranslation();

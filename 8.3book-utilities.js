@@ -35,8 +35,11 @@ const bookUtils = {
     },
 
     setTranslation(){
-        book1.Translation = {language : 'English'}
-        book2.Translation = {language : 'English'}
+        book1.Translator = 'English'
+        book1.Translation = {language : book1.language , translator : book1.Translator}
+        book2.Translator = 'English'
+        book2.Translation = {language : book2.language , translator : book2.Translator}
+
        
     },
 

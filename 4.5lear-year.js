@@ -13,9 +13,6 @@ if(year % 4 === 0){
 }else {
     return `Not leap year`
 }
-// if(year % 4 === 0 && year % 100 === 0){
-//     console.log('Not a leap year')
-// }
 
 
 }

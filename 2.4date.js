@@ -9,9 +9,8 @@ function date(){
         month : 'long'
     };
 
-    const dateName = (date.toLocaleString('en-IN', fullDayName));
-    const currentMonth = (date.toLocaleString('en-IN', fullMonthName));
-
+    let dateName = (date.toLocaleString('en-IN', fullDayName));
+    let currentMonth = (date.toLocaleString('en-IN', fullMonthName));
     let currentDate = date.getDate();
     let currentYear = date.getFullYear(); 
 

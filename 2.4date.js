@@ -19,7 +19,6 @@ function date(){
 
 }   
 
-
 console.log(date())
 
 
@@ -35,33 +34,5 @@ console.log(date())
 
 
 
-
-
-// -----------------------------------------------------------------
-    // const date = new Date();
-//     const fullWeekDay = {
-//         weekday: 'long'
-//     };
-
-// const dateName = (date.toLocaleString('en-IN', fullWeekDay));
-
-// console.log(dateName)
-
-// --------------------------------------------------
-
-//   let fullMonth = {
-//         month : 'long'
-//     };
-//     const currentMonth = (date.toLocaleString('en-IN', fullMonth));
-//     console.log(currentMonth)
-
-// ------------------------------------------------
-
-
-    // let currentDay = date.getDate();
-
-
-    // let currentYear = date.getFullYear(); 
-    // console.log(currentYear)
 
 

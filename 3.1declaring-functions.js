@@ -46,12 +46,15 @@ Submit the file to Hive
         sum = a + b;
         return sum;
     }
+    
     console.log(add(3,9))
 
 
 
     // From function expressions to function declarations
 
+
+    
     // const hello = () => "Hello!";
 
     function hello(){

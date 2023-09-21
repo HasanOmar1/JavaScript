@@ -5,7 +5,7 @@ function percentageOfWorld1(population ,  countryName){
   
 }
 
-console.log(percentageOfWorld1(1441 ,'china'))
+console.log(percentageOfWorld1(1441 ,'China'))
 console.log(percentageOfWorld1(1408 ,'India'))
 console.log(percentageOfWorld1(331.9 ,'USA'))
 
@@ -18,7 +18,7 @@ const percentageOfWorld2 = (population , countryName) => {
 
 }
 
-console.log(percentageOfWorld2(1441 ,'china'))
+console.log(percentageOfWorld2(1441 ,'China'))
 console.log(percentageOfWorld2(1408 ,'India'))
 console.log(percentageOfWorld2(331.9 ,'USA'))
 // let china = console.log(percentageOfWorld2(1441))

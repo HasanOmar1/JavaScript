@@ -2,20 +2,20 @@ function date(){
 
     const date = new Date();
     
-    const fullWeekDayName = {
+    const fullDayName = {
         weekday: 'long'
     };
     const fullMonthName = {
         month : 'long'
     };
 
-    const dateName = (date.toLocaleString('en-IN', fullWeekDayName));
+    const dateName = (date.toLocaleString('en-IN', fullDayName));
     const currentMonth = (date.toLocaleString('en-IN', fullMonthName));
 
-    let currentDay = date.getDate();
+    let currentDate = date.getDate();
     let currentYear = date.getFullYear(); 
 
-    return `Today is ${dateName} the ${currentDay} of ${currentMonth} ${currentYear}`
+    return `Today is ${dateName} the ${currentDate} of ${currentMonth} ${currentYear}`
 
 }   
 

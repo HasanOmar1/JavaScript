@@ -21,8 +21,3 @@ const percentageOfWorld2 = (population , countryName) => {
 console.log(percentageOfWorld2(1441 ,'China'))
 console.log(percentageOfWorld2(1408 ,'India'))
 console.log(percentageOfWorld2(331.9 ,'USA'))
-// let china = console.log(percentageOfWorld2(1441))
-
-// let India = console.log(percentageOfWorld2(1408))
-// let USA = console.log(percentageOfWorld2(331.9))
-

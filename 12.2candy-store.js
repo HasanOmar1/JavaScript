@@ -21,26 +21,56 @@ const candyStore = {
  
 function getCandy(candyStore, id){
 
-        let candy = candyStore.candies.find(c =>{
-        return c.id = id;
-    } )
 
-            // idOfCandies = candyStore.candies.find( idOf => {
-            //     return idOf.id.includes('as12f');
-                
-            // })
-            // return idOfCandies
-
-            // const idOfCandy = candyStore.candies.find( idOf => {
-            //     return idOf.id.includes('5hd7y');
-                
-            // })
-            // return idOfCandy
+    let mintGum = candyStore.candies.find(candy => {
+     return candy.id === id;
         
-        }
-        console.log(getCandy( candyStore , ))
+    } )
+    return mintGum
+    }
+    console.log(getCandy( candyStore , '5hd7y'))
 
 
-       
 
+
+function getPrice(candyStore , id){
+
+            
+    let candy = getCandy(candyStore ,id)
+    return candy.price;
+
+    }
+    console.log(getPrice( candyStore , '5hd7y'))
+
+      
     
+
+
+function addCandy(candyStore, id, name, price){
+    let candy = {
+        name,
+        id,
+        price,
+        amount : 1
+    }
+    candyStore.candies.push(candy);
+}                    
+
+addCandy(candyStore,'asd1' , 'snickers' , 3)
+
+console.log(candyStore)
+
+
+
+function buy(candyStore , id){
+
+
+     let candy = getCandy(candyStore , id) 
+     candy.amount--
+     candyStore.cashRegister += candy.price;
+
+
+}
+
+buy(candyStore , 'asd1')
+console.log(candyStore)

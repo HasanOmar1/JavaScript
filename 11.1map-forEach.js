@@ -42,9 +42,9 @@ const newReleases = [
   console.log(arr)
 
 
-  let arr2 = []
+  
   let map = newReleases.map(movie => {
-    return arr2.push({movieID : movie.id , movieTitle : movie.title})
+    return {movieID : movie.id , movieTitle : movie.title}
   })
 
-  console.log(arr2)
+  console.log(map)

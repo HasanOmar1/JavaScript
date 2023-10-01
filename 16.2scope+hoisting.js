@@ -4,14 +4,14 @@
     
 //     console.log(foo());
 //     var a = 1;
-//     console.log(a);
+//     console.log(a); 
 //     function foo() {
 //     return 2;
 //     }
 //     }
 //     funcA();
 
-    // first we will get a = undefined because its defined after using console log and we are using var here.
+    // first we will get a = undefined because its defined after using console log and we are using var here.[it knows there is a but isnt defined yet]
     // the function foo will return 2 , so calling funcA() will return 2
     // I fixed the code by moving console.log(a) under the definition of a
     // now we get output : 2 1 , if i move the definition of a above console.log(a) we will get output : 1 2
@@ -116,13 +116,13 @@
 
 
 
-        function funcE() {
-        console.log("Value of f in local scope: ", f); // f = 1
-            }
+        // function funcE() {
+        // console.log("Value of f in local scope: ", f); // f = 1
+        //     }
 
-        var f = 1;
-        funcE();
-        console.log("Value of f in global scope: ", f); 
+        // var f = 1;
+        // funcE();
+        // console.log("Value of f in global scope: ", f); 
 
 
         //in the function it will give us f = 1 because f is in the global scope and calling the function came after declaring f
